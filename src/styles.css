@@ -1,0 +1,23 @@
+/* This is a single-line comment 
+colors (https://colorhunt.co/palette/1d16168e1616d84040eeeeee)
+black : #1D1616
+dark-red: #8E1616
+red: #D84040; 
+white: #EEEEEE; 
+*/
+
+body {
+  background-image: linear-gradient(to top right,#1D1616, #8E1616);
+  background-attachment: fixed; 
+  color: #EEEEEE; 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #1D1616;
+}
+
+nav ul * {
+  margin: 0px 20px 0px;
+}
