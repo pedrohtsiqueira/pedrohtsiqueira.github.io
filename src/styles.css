@@ -16,8 +16,26 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: #1D1616;
+  justify-content: center;
+  
+}
+
+nav ul {
+  padding: 10px;
 }
 
 nav ul * {
   margin: 0px 20px 0px;
+  color:#EEEEEE;
+  padding: 5px;
+  border: solid;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+nav ul *:hover {
+  color:#D84040;
+  border: solid;
+  border-color: #D84040;
+  border-radius: 8px;
 }
