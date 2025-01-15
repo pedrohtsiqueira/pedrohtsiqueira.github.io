@@ -6,18 +6,40 @@ red: #D84040;
 white: #EEEEEE; 
 */
 
-body {
-  background-image: linear-gradient(to top right,#1D1616, #8E1616);
-  background-attachment: fixed; 
-  color: #EEEEEE; 
+
+* {
+  background-color: #1D1616;
+  color: #EEEEEE;
+  text-decoration: none;
+
 }
 
+/* navigation bar*/
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #1D1616;
+  justify-content: flex-end;
+  padding: 0px 20%;
 }
 
 nav ul * {
   margin: 0px 20px 0px;
+}
+
+nav ul *:hover {
+  color: #D84040;
+  border-bottom: solid;
+}
+
+/* main */
+.Main {
+  padding: 50px;
+}
+
+/* Portifolio*/
+
+.Projeto img {
+  width: 200px;
+  height: 300px; 
+  border: solid;
 }

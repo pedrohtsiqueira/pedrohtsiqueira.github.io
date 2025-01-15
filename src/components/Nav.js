@@ -5,9 +5,9 @@ export default function Nav () {
     return (
         <nav>
             <ul>
-                <Link>Home</Link>
-                <Link>Bio</Link>
-                <Link>Projetos</Link>
+                <Link to='/'>Home</Link>
+                <Link to='About'>Sobre mim</Link>
+                <Link to='Portfolio'>Projetos</Link>
             </ul>
         </nav>
     )
