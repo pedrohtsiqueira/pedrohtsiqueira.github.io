@@ -19,7 +19,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 0px 20%;
+  padding: 1% 20%;
 }
 
 nav ul * {
@@ -36,6 +36,30 @@ nav ul *:hover {
   padding: 50px;
 }
 
+/* Footer */
+
+.Footer {
+  border: solid;
+  height: 15vw;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1% 20%;
+}
+
+.icons * {
+  height: 40px;
+  width: 40px;
+  margin: 0px 20px 0px;
+  
+}
+
+.icons *:hover{
+  color: #D84040;
+}
 /* Portifolio*/
 
 .Projeto img {
