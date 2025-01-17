@@ -7,6 +7,11 @@ white: #EEEEEE;
 */
 
 
+/* icons skills 
+uploaded from: https://www.flaticon.com/packs/programming-database-1
+https://www.flaticon.com/packs/software-development-logos
+*/
+
 * {
   background-color: #1D1616;
   color: #EEEEEE;
@@ -66,4 +71,34 @@ nav ul *:hover {
   width: 200px;
   height: 300px; 
   border: solid;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+.techSkill { 
+  margin: 20px;
+  padding: 10px;
+  background-color:#EEEEEE;
+  width: 100px;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.techSkill * {
+  color:#1D1616;  
+  background-color:#EEEEEE;
+  
+}
+
+.techSkill img {
+  width: 50px;
+  height: auto;
+  background-color:#EEEEEE;
 }
