@@ -25,16 +25,37 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   padding: 1% 20%;
+  
 }
 
 nav ul * {
   margin: 0px 20px 0px;
+  transition: color 1s;
+  position: relative;
+}
+
+
+nav ul *::after {
+  content: " ";
+  width:0%; 
+  height: 4px;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: -2px;
+  left:0;
+  transition: 1s;
 }
 
 nav ul *:hover {
   color: #D84040;
-  border-bottom: solid;
 }
+
+nav ul *:hover::after {
+  width: 100%;
+  background-color: #D84040;
+}
+
+
 
 /* main */
 .Main {
@@ -59,11 +80,11 @@ nav ul *:hover {
   height: 40px;
   width: 40px;
   margin: 0px 20px 0px;
-  
 }
 
 .icons *:hover{
   color: #D84040;
+
 }
 /* Portifolio*/
 
@@ -73,31 +94,51 @@ nav ul *:hover {
   border: solid;
 }
 
+/*sobre mim */
+section {
+  margin: 40px;
+  justify-items: center;
+
+}
+
+
 .skills {
+  width: 60%;
+  flex-wrap: wrap;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center; 
+  border:solid;
 }
 
-.techSkill { 
+.skill { 
   margin: 20px;
   padding: 10px;
   background-color:#EEEEEE;
-  width: 100px;
+  width: 40%;
   height: auto;
   display:flex;
   flex-direction: column;
   align-items: center;
   border-radius:8px;
+  border-right: solid #D84040 4px;
+  border-bottom: solid #D84040 2px;
 }
 
-.techSkill * {
+#tech > div {
+  width: 15%;
+  height: auto;
+}
+
+.skill * {
   color:#1D1616;  
-  background-color:#EEEEEE;
-  
+  background-color: #EEEEEE 
 }
 
-.techSkill img {
+
+
+.skill img {
   width: 50px;
   height: auto;
   background-color:#EEEEEE;
