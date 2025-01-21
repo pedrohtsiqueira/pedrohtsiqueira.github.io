@@ -4,7 +4,7 @@ black : #1D1616
 dark-red: #8E1616
 red: #D84040; 
 white: #EEEEEE; 
-*/
+*
 
 
 /* icons skills 
@@ -16,7 +16,12 @@ https://www.flaticon.com/packs/software-development-logos
   background-color: #1D1616;
   color: #EEEEEE;
   text-decoration: none;
+  margin:0px;
+  padding: 0px;
+}
 
+h1, h2, h3 {
+  margin: 10px;
 }
 
 /* navigation bar*/
@@ -86,7 +91,7 @@ nav ul *:hover::after {
   color: #D84040;
 
 }
-/* Portifolio*/
+/* Portfolio */
 
 .Projeto img {
   width: 200px;
@@ -109,7 +114,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center; 
-  border:solid;
 }
 
 .skill { 
@@ -143,3 +147,38 @@ section {
   height: auto;
   background-color:#EEEEEE;
 }
+
+
+
+.Portfolio {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.Portfolio .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Projeto {
+  width: 25%;
+  margin: 20px;
+  justify-items: center;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+}
+
+.Projeto * { 
+  background-color: #EEEEEE;
+  color:#1D1616;
+}
+
+
+
+
+
+
+
