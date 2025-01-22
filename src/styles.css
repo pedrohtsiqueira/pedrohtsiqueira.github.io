@@ -25,22 +25,27 @@ h1, h2, h3 {
 }
 
 /* navigation bar*/
-nav {
+nav.mobile {
+  display: none;
+}	
+
+nav.desktop {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
-  padding: 1% 20%;
-  
+  padding: 10px 20%;
+  border: solid;
 }
 
-nav ul * {
+nav.desktop ul * {
   margin: 0px 20px 0px;
   transition: color 1s;
   position: relative;
 }
 
 
-nav ul *::after {
+nav.desktop ul *::after {
   content: " ";
   width:0%; 
   height: 4px;
@@ -51,11 +56,11 @@ nav ul *::after {
   transition: 1s;
 }
 
-nav ul *:hover {
+nav.desktop ul *:hover {
   color: #D84040;
 }
 
-nav ul *:hover::after {
+nav.desktop ul *:hover::after {
   width: 100%;
   background-color: #D84040;
 }
@@ -177,7 +182,22 @@ section {
 }
 
 
+@media screen and  (max-width: 465px){
+  /* navigation bar*/
+  nav.desktop{
+    display: none;
+  }
 
+  nav.mobile {
+    display:flex;
+    margin: 5%;
+  } 
+
+  nav.mobile > * {
+    width: 30px;
+    height: auto;
+  } 
+}
 
 
 
