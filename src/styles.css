@@ -25,6 +25,9 @@ h1, h2, h3 {
 }
 
 /* navigation bar*/
+
+
+
 nav {
     height: 50px;
     padding: 10px 10%;
@@ -73,7 +76,7 @@ nav.desktop ul *:hover::after {
 
 
 /* main */
-.Main {
+main {
   padding: 50px;
 }
 
@@ -200,6 +203,17 @@ section {
 
 
 @media screen and  (max-width: 475px){
+  
+   /*main*/
+   main { 
+    text-align:center;
+  }
+
+  main p { 
+    text-align: justify;
+  }
+  
+  
   /* navigation bar*/
   nav.desktop{
     display: none;
@@ -216,7 +230,6 @@ section {
   }
   
   nav.mobile ul {
-    border: solid;
     top:0%;
     right:0%;
     width: 150px;
@@ -246,6 +259,9 @@ section {
   .closeIcon:hover { 
     color:#D84040;
   }
+
+
+ 
 
 
 }

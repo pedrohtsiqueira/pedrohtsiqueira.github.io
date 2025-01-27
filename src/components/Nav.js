@@ -14,7 +14,7 @@ export default function Nav () {
    }
     
     return (
-        <>
+        <div className="navBar">
             <nav className="desktop">
                 <ul>
                     <Link to='/'>Home</Link>
@@ -26,7 +26,7 @@ export default function Nav () {
             <nav className="mobile">
                 {open ? <Menu handleOpenMenu={handleOpenMenu}/>: <IoMdMenu onClick={()=>handleOpenMenu(true)}/>}
             </nav>
-        </>
+        </div>
 
     )
 }

@@ -5,13 +5,13 @@ import Portfolio from './Portfolio';
 
 export default function Main () { 
     return (
-        <div className="Main"> 
+        <main>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='About' element={<About/>}/>
                 <Route path='Portfolio' element={<Portfolio/>}/>
             </Routes>     
-        </div>
+        </main>
     )
 }
 
