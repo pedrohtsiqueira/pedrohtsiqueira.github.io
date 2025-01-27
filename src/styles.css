@@ -180,6 +180,7 @@ section {
 #tech > div {
   min-width: 0px;
   width: 110px;
+  min-width: auto;
   height: auto;
 }
 
@@ -232,7 +233,10 @@ section {
   nav.mobile ul * {
     color:#1D1616;
     background-color: #EEEEEE;
+    margin-bottom: 20px;
   }
+
+
   
   .closeIcon {
     margin-right: 70%;
