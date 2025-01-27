@@ -1,9 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import Menu from "./Menu";
 
 
 
 export default function Nav () {
+   const [open, setOpen] = useState(false);
+
+
+   function handleOpenMenu(e) {
+       setOpen(e);
+   }
+    
     return (
         <>
             <nav className="desktop">
@@ -15,7 +24,7 @@ export default function Nav () {
             
             </nav>
             <nav className="mobile">
-                <IoMdMenu/>
+                {open ? <Menu handleOpenMenu={handleOpenMenu}/>: <IoMdMenu onClick={()=>handleOpenMenu(true)}/>}
             </nav>
         </>
 
